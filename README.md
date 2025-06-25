@@ -1,12 +1,11 @@
-# {project title}
+# CONTACT MANAGEMENT APP
 
-{project description}
-
+This project allows users to add, search, edit, and delete contacts. This project has implemented CRUD system, utilizing database as persistent storage.
 
 ## HOW TO RUN THIS PROGRAM
 1. Clone this project
 ```sh
-git clone https://github.com/yasirmaxstyle/fgo24-react-{project-endpoint}
+git clone https://github.com/yasirmaxstyle/fgo24-CRUD-contact-app-frontend.git .
 ```
 2. Install NPM
 ```sh
