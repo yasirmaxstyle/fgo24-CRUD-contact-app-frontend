@@ -191,11 +191,16 @@ const ContactDashboard = () => {
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {contacts.map((contact) => (
-              <UserContact
-                contact={contact}
-                openModal={openModal}
-                deleteContact={deleteContact}
-              />
+              <div
+                key={contact.id}
+                className="bg-gray-900 border border-gray-800 rounded-lg p-6 hover:border-gray-700 transition-colors"
+              >
+                <UserContact
+                  contact={contact}
+                  openModal={openModal}
+                  deleteContact={deleteContact}
+                />
+              </div>
             ))}
           </div>
         )}
