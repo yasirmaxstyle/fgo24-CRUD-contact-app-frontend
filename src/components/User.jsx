@@ -2,10 +2,7 @@ import { User, Mail, Phone, Edit, Trash2 } from 'lucide-react'
 
 function UserContact({ contact, openModal, deleteContact, }) {
   return (
-    <div
-      key={contact.id}
-      className="bg-gray-900 border border-gray-800 rounded-lg p-6 hover:border-gray-700 transition-colors"
-    >
+    <>
       <div className="flex items-center justify-between mb-4">
         <div className="flex items-center gap-3">
           <div className="w-10 h-10 bg-gray-500 rounded-full flex items-center justify-center">
@@ -45,7 +42,7 @@ function UserContact({ contact, openModal, deleteContact, }) {
           Delete
         </button>
       </div>
-    </div>
+    </>
   )
 }
 
