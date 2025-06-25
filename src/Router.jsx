@@ -1,6 +1,6 @@
 import { Outlet, Route, Routes } from "react-router"
 import Header from "./components/Header"
-import HomePage from "./pages/HomePage"
+import ContactDashboard from "./pages/HomePage"
 
 function Layout() {
   return (
@@ -15,7 +15,7 @@ function Router() {
   return (
     <Routes>
       <Route path='/' element={<Layout />}>
-        <Route index element={<HomePage />} />
+        <Route index element={<ContactDashboard />} />
       </Route>
     </Routes>
   )
