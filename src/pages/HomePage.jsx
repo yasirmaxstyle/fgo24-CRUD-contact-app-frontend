@@ -41,7 +41,7 @@ const ContactDashboard = () => {
 
   const searchContact = async () => {
     if (!searchId.trim()) {
-      showMessage('Please enter a contact name', 'error');
+      showMessage('Please enter a contact ID', 'error');
       return;
     }
 
@@ -164,7 +164,7 @@ const ContactDashboard = () => {
                 <Search className="absolute left-3 top-3 h-4 w-4 text-gray-400" />
                 <input
                   type="text"
-                  placeholder="Search contact name"
+                  placeholder="Search contact by ID"
                   value={searchId}
                   onChange={(e) => setSearchId(e.target.value)}
                   className="w-full pl-10 pr-4 py-2 bg-gray-900 border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
